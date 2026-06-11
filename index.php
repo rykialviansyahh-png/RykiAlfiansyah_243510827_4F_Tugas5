@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Sederhana</title>
+    <title>Membuat Form Sederhana</title>
 </head>
 <body>
 
@@ -22,6 +22,21 @@
         <button>Submit</button>
     </div>
 </form>
+
+<?php
+
+$nama = @$_GET['nama'];
+$alamat = @$_GET['alamat'];
+
+if ($nama) {
+    echo "<strong>Nama:</strong> {$nama} <br>";
+}
+
+if ($alamat) {
+    echo "<strong>Alamat:</strong> {$alamat} <br>";
+}
+
+?>
 
 </body>
 </html>
